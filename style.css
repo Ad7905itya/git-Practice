@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(83, 89, 109);
+}
+
+.demo{
+    color: #d0cfcf;
+    margin: auto;
+    margin-top: 40px;
+    text-shadow: 6px 8px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 50px;
+}
+
+.container{
+    width: 300px;
+    margin-inline: auto;
+    border-radius: 18px;
+    background-color: #d0cfcf;
+    box-shadow: 5px 5px 15px 4px rgba(0, 0, 0, 0.2),inset -10px -10px 15px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    overflow: hidden;
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 400;
+    position: relative;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    color: rgb(4, 27, 45);
+    margin-bottom: 20px;
+    animation: slideShow 1s ease-in 1;
+}
+
+img{
+    width: 100%;
+}
+
+@keyframes slideShow {
+    from{
+        left: -40%;
+        opacity: 0;
+    }to{
+        left: 0;
+        opacity: 1;
+    }
+}
